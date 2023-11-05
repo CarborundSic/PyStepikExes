@@ -1,4 +1,4 @@
-def is_isolate(matrix, x, y):
+def is_isolate(matrix, x, y):  # проверить на изолированность единички
     n = len(matrix)
     for i in range(-1, 2):
         for j in range(-1, 2):
@@ -8,7 +8,7 @@ def is_isolate(matrix, x, y):
     return True
 
 
-def verify(matrix):
+def verify(matrix):  # искать единичку в матрице из нулей
     N = len(matrix)
     for i in range(N):
         for j in range(N):
